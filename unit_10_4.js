@@ -25,7 +25,7 @@ const mergeObjects = (obj1, obj2) => ({ ...obj1, ...obj2 })
 // doubleAndReturnArgs([2],10,4) // [2, 20, 8]
 
 const doubleAndReturnArgs = (arr, ...args) => [
-	arr,
+	...arr,
 	...args.map((num) => num * 2)
 ]
 
